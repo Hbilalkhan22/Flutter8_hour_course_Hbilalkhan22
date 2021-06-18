@@ -3,8 +3,16 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:untitled/screens/utils/routes/Myroutes.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String name = "";
+  bool changeButton = false;
 
   @override
   Widget build(BuildContext context) {
@@ -43,13 +51,45 @@ class LoginPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                   Navigator.pushNamed(context, MyRoutes.homeRoute);
+                InkWell(
+                  onTap: () async {
+                    setState(() {
+                      changeButton = true;
+                    });
+                    await Future.delayed(Duration(seconds: 1));
+                    Navigator.pushNamed(context, MyRoutes.homeRoute);
                   },
-                  child: Text('Login'),
-                  style: TextButton.styleFrom(minimumSize: Size(150,30)),
-                )
+                  child: AnimatedContainer(
+                    height: 50,
+                    width: changeButton ? 50 : 150,
+                    alignment: Alignment.center,
+                    child: changeButton
+                        ? Icon(Icons.done,color: Colors.white,)
+                        : Text(
+                            'Login',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 16,
+                            ),
+                          ),
+                    decoration: BoxDecoration(
+                      color: Colors.purple,
+                      // shape:
+                      //     changeButton ? BoxShape.circle : BoxShape.rectangle,
+                      borderRadius:
+                          BorderRadius.circular(changeButton ? 50 : 10),
+                    ),
+                    duration: Duration(seconds: 1),
+                  ),
+                ),
+                // ElevatedButton(
+                //   onPressed: () {
+                //    Navigator.pushNamed(context, MyRoutes.homeRoute);
+                //   },
+                //   child: Text('Login'),
+                //   style: TextButton.styleFrom(minimumSize: Size(150,30)),
+                // )
               ],
             ),
           ),
