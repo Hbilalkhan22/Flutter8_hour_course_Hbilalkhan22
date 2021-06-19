@@ -8,8 +8,8 @@ class MyHome extends StatelessWidget{
     return Scaffold(
 
       appBar: AppBar(
-        title: Text('CataLog App'),
-        backgroundColor: Colors.deepPurple,
+        title: Text('Catalog App'),
+
       ),
 
       body: Text('Hello World'),
