@@ -1,0 +1,56 @@
+{
+  "products":[
+    {
+      "id":1,
+      "name":"Iphone 1",
+      "desc":"12 generation",
+      "price":99,
+      "color":"#555555",
+      "image":
+      "https://images.unsplash.com/photo-1594731804139-d70328c07f4a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFwcGxlJTIwYWNjZXNzb3JpZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+
+    },
+    {
+      "id":2,
+      "name":"Iphone 2",
+      "desc":"13 generation",
+      "price":999,
+      "color":"#555555",
+      "image":
+      "https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFwcGxlJTIwYWNjZXNzb3JpZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+
+    },
+    {
+      "id":3,
+      "name":"Iphone 3",
+      "desc":"14 generation",
+      "price":9999,
+      "color":"#555555",
+      "image":
+      "https://www.apple.com/v/iphone/compare/v/images/overview/compare_iphone12_black__dd4l4x5fmg66_large.jpg"
+
+    },
+    {
+      "id":4,
+      "name":"Iphone 4",
+      "desc":"14 generation",
+      "price":99900,
+      "color":"#555555",
+      "image":
+      "https://www.apple.com/v/iphone/compare/v/images/overview/compare_iphone12_mini_black__32g32p2j7hem_large.jpg"
+
+    },
+    {
+      "id":5,
+      "name":"Iphone 5",
+      "desc":"15 generation",
+      "price":999000,
+      "color":"#555555",
+      "image":
+      "https://www.apple.com/v/iphone/compare/v/images/overview/compare_iphoneSE_2nd_gen_white__imh2qy47ikya_large.jpg"
+
+    }
+
+  ]
+
+}
