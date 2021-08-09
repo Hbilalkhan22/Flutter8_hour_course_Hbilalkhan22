@@ -1,7 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:untitled/screens/utils/routes/Myroutes.dart';
+import 'package:untitled/utils/routes/Myroutes.dart';
+
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

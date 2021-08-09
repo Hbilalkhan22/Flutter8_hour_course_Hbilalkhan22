@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/screens/utils/routes/Myroutes.dart';
+import 'package:untitled/utils/routes/Myroutes.dart';
+import 'package:untitled/widget/mythemes.dart';
+
 import '/screens/login_page.dart';
 import '/screens/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'screens/widget/mythemes.dart';
+
 
 void main() {
   runApp(MyApp());
